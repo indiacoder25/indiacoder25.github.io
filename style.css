@@ -340,6 +340,7 @@
     flex-direction: column;
     justify-content: flex-end;
     text-align: start;
+    text-decoration: none;
 }
 .main-page-bottom-images-each:hover{
     scale: 1.1;
