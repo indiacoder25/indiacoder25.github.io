@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    font-family: "Outfit";
+    font-weight: 400;
+    color: #fff;
+    scrollbar-width: thin;
+}
+
+.auth-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-container-left{
+    width: 65rem;
+    height: 100vh;
+    background: url(./assets/signin/Screenshot\ 2025-05-13\ 124221.png) no-repeat ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:1180px){
+    .auth-container-left{
+        width: 80rem;
+    }
+}
+@media(max-width:1020px){
+    .auth-container-left{
+        display: none;
+    }
+}
+
+.auth-container-left-content{
+    background: transparent;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 80px;
+}
+.auth-container-left-headings{
+    background: transparent;
+}
+.auth-container-left-headings h1{
+    background: transparent;
+    font-size: 55px;
+    font-weight: 500;
+}
+.auth-container-left-para{
+    background: transparent;
+    width: 370px;
+    margin-top: 2rem;
+}
+.auth-container-left-para p{
+    background: transparent;
+}
+
+
+.auth-container-right {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 0 1rem;
+    margin-left: 1.7rem;
+}
+@media(max-width:1150px){
+    .auth-container-right{
+        margin-left: 1.4rem;
+    }
+} 
+.auth-box-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.auth-box-top h1{
+    color: #38ccff;
+    margin-bottom: 4px;
+    font-size: 30px;
+}
+.auth-box-top p{
+    color: #858585;
+}
+.auth-box-middle-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.auth-box-middle-form div{
+    width: 100%;
+}
+.auth-box-input{
+    width: 90%;
+    height: 2.3rem;
+    color: #000;
+    padding-left: 0.9rem ;
+    margin-top: 1rem;
+    border: 1px solid #858585 ;
+    border-radius: 7px;
+}
+
+.auth-box-payment{
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    margin: 1rem 2rem 0 0;
+    position: relative;
+}
+.auth-box-payment .payment-content{
+    display: inline-block;
+    margin-bottom: 9rem;
+    width: 30px;
+}
+
+.auth-box-payment .info-button{
+    display: inline-block;
+    color: #38ccff;
+    background-color: #fff;
+    border: solid #38ccff 2px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 2px 9px;
+    cursor: pointer;
+}
+.auth-box-payment img{
+    width: 150px;
+    padding-top: 1rem;
+}
+.auth-box-payment .payment-info{
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #0000001a;
+    display: none;
+    margin-top: 10px;
+    padding: 15px;
+    position: absolute;
+    z-index: 10000;
+    width: 250px;
+    /* right: 0; */
+}
+.auth-box-payment .info-toggle{
+    display: none;
+}
+.auth-box-payment .info-toggle:checked ~ .payment-info{
+    display: block;
+}         /* later */
+
+.auth-box-buttons{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0;
+}
+.auth-box-submit-btn{ 
+    width: 7rem;
+    height: 2.6rem;
+    color: #01265d;
+    background-color: #38ccff;
+    border: none;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: 700;
+    margin: 1rem 2.7rem 0 0;
+    cursor: pointer;
+}
+.auth-box-bottom-text p{
+    color: #858585;
+    display: flex;
+    font-size: .90rem;
+    margin: 1rem 3rem 0 0 ;
+    text-align: start;
+}
+.auth-box-bottom-text a{
+    color: #38ccff;
+}
+.auth-box-form-text p{
+    color: #858585;
+    display: flex;
+    font-size: .90rem;
+    margin: 1rem 3rem auto auto ;
+}
+.auth-box-form-text a{
+    color: #38ccff;
+}
