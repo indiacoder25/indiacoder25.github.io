@@ -28,8 +28,23 @@
                 <a href="./about-us.html"><h4 class="navbar-text"> AboutUs </h4></a>
                 <a href="./register.html"><h4 class="navbar-text"> Register </h4></a>
                 <a href="./login.html"><h4 class="navbar-text"> SignIn </h4></a>
-                <span><img src="./assets/MainPage/menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+                <input type="checkbox" id="check-btn" onclick="document.querySelector('.right-header-sidebar-menu').style.right = this.checked ? '0' :'10000px';">
+                <!-- <span id="menu-btn"><label for="check-btn"><img src="./assets/MainPage/menu_30dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></label></span> -->
+                <div id="menu-icon"><label for="check-btn"><i class="fa-solid fa-bars"></i></label></div>
             </div>
+            <!-- <div class="AboutUs"><a href="">AboutUs</a></div>
+            <div class="Register"><a href="">Register</a></div>
+            <div class="SignIn"><a href="">SignIn</a></div> -->
+        </div>
+
+        <div class="right-header-sidebar-menu">
+            <div id="cross-icon"> <!--<h3>Quick Links</h3>--> <label for="check-btn"><i class="fa-solid fa-xmark"></i></label></div>
+            <div class="sidebar-menu-content">
+                <a href="./about-us.html"><div class="sidebar-menu-text">AboutUs</div></a>
+                <a href="./register.html"> <div class="sidebar-menu-text">Register</div></a>
+                <a href="login.html"> <div class="sidebar-menu-text">SignIn</div></a>
+            </div>
+            <div class="zairza-logo"><img src="./assets/MainPage/zairza_sidebar.png" alt="zairza-logo"></div>
         </div>
 
 

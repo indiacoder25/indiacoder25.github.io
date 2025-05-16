@@ -9,7 +9,6 @@
     scrollbar-width: thin;
 }
 
-
 .header{
     margin: 0;
     width: 100vw;
@@ -82,13 +81,25 @@
     padding: 2rem;
     text-align: center;
 }
-.right-header-navbar img{
+
+/* .right-header-navbar #menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.right-header-navbar #menu-icon i{
     background-color: #111;
     height:30px;
     width:30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.right-header-navbar #menu-icon i:hover{
+    transform: scale(1.1);
+    /* transform: ; */
 }
 @media(min-width:900px){
-    .right-header-navbar span{
+    .right-header-navbar #menu-icon{
         display: none;
     }
 }
@@ -97,6 +108,90 @@
         display: none;
     }
 }
+
+.right-header-sidebar-menu{
+    height: 100%;
+    min-height: 100vh;
+    width: 30vw;
+    position: fixed;
+    right: 9000px;
+    z-index: 10;
+    transition: left 0.3s linear;
+}
+@media (max-width: 1400px) {
+    .right-header-sidebar-menu {
+        width: 40vw;
+    }
+}
+@media (max-width: 900px) {
+    .right-header-sidebar-menu {
+        overflow-y: scroll;
+        width: 60vw;
+    }
+}
+@media (max-width: 700px) {
+    .right-header-sidebar-menu {
+        overflow-y: scroll;
+        width: 70vw;
+    }
+}
+@media (max-width: 500px) {
+    .right-header-sidebar-menu {
+        background-color: #111;
+        width: 100vw;
+    }
+}
+
+.right-header-sidebar-menu #cross-icon{
+    text-align: right;
+    margin: 2rem 2rem 5px;
+    cursor: pointer;
+}
+.right-header-sidebar-menu #cross-icon i{
+    display: inline;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+.right-header-sidebar-menu .sidebar-menu-content a{
+    text-decoration: none;
+}
+
+.right-header-sidebar-menu .sidebar-menu-text{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+@media (max-width: 700px) {
+    .right-header-sidebar-menu .sidebar-menu-text{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 500px) {
+    .right-header-sidebar-menu .sidebar-menu-text {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+.right-header-sidebar-menu .zairza-logo img{
+    background-color: #111111;
+    width: 243px;
+    height: auto;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+    position: fixed;
+    bottom: 0;
+}
+
+#check-btn{
+    opacity: 0;
+}
+/* #check-btn:checked .right-header-sidebar-menu{
+    right: 0;
+} */
 
 
 .about-us{
