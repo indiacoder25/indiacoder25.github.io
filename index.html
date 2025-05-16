@@ -41,8 +41,9 @@
             <p class="main-page-left-heading transparent">Hunt the Future in the </p> 
             <p class="main-page-left-heading transparent">Cyber Forest</p>
             <div class="buttons transparent">
-                <button id="btn-exploreEvents">Explore Events</button>
-                <button id="btn-signUp">Register Now</button>
+                <!-- <a href="#event-section"><button id="btn-exploreEvents">Explore Events</button></a> -->
+                <button id="btn-exploreEvents" onclick="document.querySelector('#event-section').scrollIntoView({behavior: 'smooth'});">Explore Events</button>
+                <button id="btn-signUp" onclick="window.location.href='./register.html'">Register Now</button>
             </div>
         </div>
         <div class="main-page-right">
@@ -72,7 +73,7 @@
     </div>
     
 
-    <div class="main-page-bottom">
+    <div class="main-page-bottom" id="event-section">
         <h1 class="main-page-bottom-heading">Events For You</h1>
         <p class="main-page-bottom-para"><i>Everything has been made simple for you to scroll around and get the most</i></p>
         <p class="main-page-bottom-para"><i>out of the options available.</i></p>
@@ -82,7 +83,7 @@
                 <h1>Tech events</h1>
                 <p>Click to view</p>
             </a>
-            <a href="./fun-events.html" class="main-page-bottom-images-each">
+            <a href="fun-events.html" class="main-page-bottom-images-each">
                 <h1>Fun events</h1>
                 <p>Click to view</p>
             </a>
