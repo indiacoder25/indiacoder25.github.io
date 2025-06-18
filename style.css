@@ -117,8 +117,10 @@ html{
     position: fixed;
     right: 9000px;
     z-index: 10;
+    scrollbar-width: none;
     transition: left 0.3s linear;
 }
+
 @media (max-width: 1400px) {
     .right-header-sidebar-menu {
         width: 40vw;
@@ -533,7 +535,7 @@ html{
     scale: 1.1;
     transition: all 0.5s;
 }
-.main-page-bottom-images-each:not(hover){
+.main-page-bottom-images-each:not(:hover){
     scale: 1;
     transition: all 0.5s;
 }

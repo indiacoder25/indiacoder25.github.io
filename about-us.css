@@ -113,6 +113,7 @@
     position: fixed;
     right: 9000px;
     z-index: 10;
+    scrollbar-width: none;
     transition: left 0.3s linear;
 }
 @media (max-width: 1400px) {

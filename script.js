@@ -5,3 +5,13 @@ window.addEventListener("load", () => {
     document.getElementById("main-content").style.display = "block";
   }, 2000); 
 });
+
+// animations 
+
+document.addEventListener('DOMContentLoaded', function () {
+  AOS.init({
+  duration: 1000,       
+  once: true,           
+//   easing: 'ease-in-out'
+  });
+})
